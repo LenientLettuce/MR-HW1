@@ -1,0 +1,5 @@
+1. ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute "{theta: 0.785}" (To set rotation, 45 degrees is aprox .785 rads)
+
+2.ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}" (To make the turtle move in the X direction in its own frame)
+
+3.ros2 topic echo /turtle1/pose (To Print the data)
